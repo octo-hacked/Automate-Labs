@@ -54,7 +54,7 @@ const projects = [
 export default function ProjectsSection() {
   return (
     // Replaced broad 'my-20' with synchronized layout responsive section padding
-    <section className="py-4 sm:py-10 lg:py-16 bg-[#FAFAFA] text-gray-900 overflow-hidden font-instrument">
+    <section className="py-4 sm:py-10 lg:py-16 text-gray-900 overflow-hidden font-instrument">
       {/* Aligned page container padding rules to match px-4 sm:px-6 lg:px-8 */}
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
         

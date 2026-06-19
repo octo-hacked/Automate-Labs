@@ -82,7 +82,7 @@ const HeroSection = () => {
       </main>
 
       {/* Giant Bottom Text */}
-      <div className="flex items-center justify-sta border-t border-gray-100 px-4 mt-3 sm:mt-6 relative ">
+      <div className="flex items-center justify-sta px-4 mt-3 sm:mt-6 relative ">
         <div className="max-w-[1250px] mx-auto px-4 sm:px-8 overflow-hidden
                         text-left sm:text-center">
           <h2 className=" relative

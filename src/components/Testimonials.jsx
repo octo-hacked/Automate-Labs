@@ -106,7 +106,7 @@ const testimonials = [
 export default function TestimonialSection() {
   return (
     // Replaced arbitrary my-20 with responsive py matched layout
-    <section className="my-16 sm:my-10 lg:my-16 bg-[#FAFAFA] text-gray-900 overflow-hidden font-instrument">
+    <section className="my-16 sm:my-10 lg:my-16 text-gray-900 overflow-hidden font-instrument">
       {/* Aligned px-4 sm:px-6 lg:px-8 with the Hero structure */}
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
         

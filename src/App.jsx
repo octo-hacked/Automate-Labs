@@ -49,9 +49,9 @@ function App() {
       {/* <Divider/> */}
       <HeroSection/>
       <Divider/>
-      <TestimonialSection />
-      <Divider/>
       <ProjectsSection />
+      <Divider/>
+      <TestimonialSection />
       <Contact/>
     </>
   )

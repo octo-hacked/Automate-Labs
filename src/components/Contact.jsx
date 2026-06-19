@@ -16,7 +16,14 @@ const Contact = () => {
         {/* Background Component Kept Intact */}
         <div className='w-full absolute -z-10 h-full bg-black/25'></div>
         <div className='absolute -z-20 w-full h-full'>
-          <DarkVeil />
+          <DarkVeil
+          hueShift={0}
+  noiseIntensity={0}
+  scanlineIntensity={0}
+  speed={3}
+  scanlineFrequency={0}
+  warpAmount={0}
+           />
         </div>
 
         {/* Main Content Wrapper (Forced over the veil via z-index) */}
