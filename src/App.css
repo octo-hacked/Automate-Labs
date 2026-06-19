@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-instrument: "Instrument Sans", sans-serif;
+}
+
+@media (min-width: 1023px) and (max-width: 1227px) {
+  .custom-text-range {
+    font-size: 14.4vw !important; /* !important ensures it overrides Tailwind's utilities */
+  }
+}
