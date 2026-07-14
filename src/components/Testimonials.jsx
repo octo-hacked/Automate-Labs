@@ -130,7 +130,7 @@ export default function TestimonialSection() {
             <div 
               key={testimonial.id} 
               // Changed border-gray-700 (dark) to clean border-gray-100 to fit your light UI palette
-              className="break-inside-avoid bg-white p-6 rounded-lg border border-gray-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-shadow duration-300 flex flex-col justify-between"
+              className="break-inside-avoid bg-white p-6 rounded-lg border border-gray-300 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-shadow duration-300 flex flex-col justify-between"
             >
               <p className="text-gray-700 leading-relaxed mb-6 text-[16px] sm:text-[17px]">
                 {testimonial.content}

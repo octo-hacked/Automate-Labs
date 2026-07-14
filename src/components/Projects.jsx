@@ -1,60 +1,37 @@
 import React from 'react';
 
+
 const projects = [
   {
     id: 1,
-    title: "Omni Media Scaling",
-    description: "End-to-end video production and paid media strategy that resulted in a 33% drop in CPA and scaled the client's monthly recurring revenue.",
-    tags: ["Video Editing", "Paid Ads", "Strategy"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600",
-    link: "#"
+    title: "Provider App",
+    description: "A one-stop solution for students handling hostel bookings, college reviews, and exclusive internships. We designed and deployed the frontend of the website and integrated their API.",
+    tags: ["Frontend", "Web Design", "API Integration"],
+    image: "/Provider Logo.png",
+    link: "https://providerapp.in/"
   },
   {
     id: 2,
-    title: "Barebone AI Rebrand",
-    description: "A complete visual overhaul including high-retention short-form content, crisp b-roll integration, and a modern aesthetic.",
-    tags: ["Branding", "Short-form", "Creative"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600",
-    link: "#"
+    title: "VibeCall AI",
+    description: "An AI agent-based call agent. We executed the end-to-end engineering for this project, which included building AI pipelines, integrating the AI models, and connecting calling APIs.",
+    tags: ["Artificial Intelligence", "Data Pipelines", "End-to-End Engineering"],
+    image: "/VibeCall AI.png",
+    link: "https://vibecall.co.in/"
   },
   {
     id: 3,
-    title: "Fluid Focus Launch",
-    description: "Produced several high-performing video assets for a product launch, delivering a fresh, engaging feel that captured the brand's identity.",
-    tags: ["Product Launch", "Motion Graphics"],
-    image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800&h=600",
-    link: "#"
-  },
-  {
-    id: 4,
-    title: "Tryharmony.ai Campaign",
-    description: "High-energy edits with perfect song choices and dynamic fonts that drove massive organic engagement across social channels.",
-    tags: ["Organic Social", "B-Roll", "Editing"],
-    image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&q=80&w=800&h=600",
-    link: "#"
-  },
-  {
-    id: 5,
-    title: "Pause Studios Growth",
-    description: "A targeted content sprint over six weeks that significantly grew the brand's online presence and secured high-ticket client calls.",
-    tags: ["Content Sprint", "Lead Gen"],
-    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80&w=800&h=600",
-    link: "#"
-  },
-  {
-    id: 6,
-    title: "Arthur Brooks Marketing",
-    description: "Millions of views generated through top-notch editing skills, fast feedback loops, and highly strategic content distribution.",
-    tags: ["Viral Content", "Distribution"],
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800&h=600",
-    link: "#"
+    title: "ICCSAI",
+    description: "An annual International Conference event. We designed their complete website from the ground up and seamlessly integrated their API.",
+    tags: ["Web Development", "Event Platform", "API Integration"],
+    image: "ICCSAI AL.png",
+    link: "https://www.iccsai.in/"
   }
-];
+]
 
 export default function ProjectsSection() {
   return (
     // Replaced broad 'my-20' with synchronized layout responsive section padding
-    <section className="py-4 sm:py-10 lg:py-16 text-gray-900 overflow-hidden font-instrument">
+    <section className="my-20 sm:my-10 lg:my-20 text-gray-900 overflow-hidden font-instrument">
       {/* Aligned page container padding rules to match px-4 sm:px-6 lg:px-8 */}
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
@@ -62,8 +39,8 @@ export default function ProjectsSection() {
         <div className="space-y-4 mb-9 sm:mb-8 lg:mb-12 leading-[1]">
           {/* Replaced fixed text scales with Hero's exact dynamic title parameters */}
           <h2 className="text-[2.6rem] sm:text-5xl lg:text-6xl font-extrabold text-black tracking-tighter">
-            Featured <br className="sm:hidden" /> {/* Flawless single-column drop on narrow devices */}
-            <span className="text-[#18387b]">Projects</span>
+            Featured 
+            <span className="text-[#18387b]"> Projects</span>
           </h2>
           {/* Matched sizing, layout colors, and tracking styles */}
           <p className="w-full sm:w-[95%] text-xl sm:text-xl lg:text-[1.8rem] text-gray-400 leading-[1.15] font-medium tracking-tighter">
@@ -78,7 +55,7 @@ export default function ProjectsSection() {
             <div 
               key={project.id} 
               // Integrated border-gray-100 to sync cleanly with the layout borders across other panels
-              className="bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col overflow-hidden group"
+              className="bg-white border border-gray-300 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col overflow-hidden group"
             >
               {/* Project Image Panel */}
               <div className="relative h-56 sm:h-60 overflow-hidden bg-gray-50">
@@ -134,11 +111,11 @@ export default function ProjectsSection() {
         </div>
 
         {/* Unified View All CTA Panel */}
-        <div className="mt-12 sm:mt-16 flex justify-center">
+        {/* <div className="mt-12 sm:mt-16 flex justify-center">
           <button className="w-full sm:w-auto bg-black hover:bg-[#011a38] text-white font-semibold py-4 px-8 rounded-lg text-lg sm:text-xl transition-colors duration-200 shadow-sm">
             View All Work
           </button>
-        </div>
+        </div> */}
 
       </div>
     </section>

@@ -22,6 +22,9 @@ import ProjectsSection from './components/Projects'
 import Lenis from 'lenis'
 import Contact from './components/Contact'
 import HeroSection from './components/HeroSection'
+import StatsSection from './components/StatsSection'
+
+import ServicesSection from './components/ServicesSection'
 
 function App() {
 
@@ -49,6 +52,8 @@ function App() {
       {/* <Divider/> */}
       <HeroSection/>
       <Divider/>
+      <StatsSection/>
+      <ServicesSection/>
       <ProjectsSection />
       <Divider/>
       <TestimonialSection />

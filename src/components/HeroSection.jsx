@@ -6,7 +6,7 @@ import ui_development from '/UI_development.png'
 
 const HeroSection = () => {
   return (
-    <div className="mb-16 min-h-[calc(100vh-80px)] relative -z-20 bg-white font-instrument flex flex-col overflow-hidden">
+    <div className="mb-10 min-h-[calc(100vh-80px)] relative -z-20 bg-white font-instrument flex flex-col overflow-hidden">
 
       {/* Background Grid */}
       <div className='absolute -z-10 w-full h-full -translate-y-48 translate-x-20 md:-translate-y-26 md:-translate-x-40 opacity-55'>
@@ -86,12 +86,12 @@ const HeroSection = () => {
         <div className="max-w-[1250px] mx-auto px-4 sm:px-8 overflow-hidden
                         text-left sm:text-center">
           <h2 className=" relative
-            w-full text-[20vw] sm:text-[14.1vw] md:text-[14.2vw] custom-text-range lg:text-[180px] 
+            w-full text-[21vw] sm:text-[14.4vw] md:text-[14.8vw] custom-text-range lg:text-[190px] 
             font-black text-black leading-none tracking-tighter
             whitespace-normal sm:whitespace-nowrap
-            select-none -left-5 sm:-left-6 lg:-left-2
+            select-none -left-5 sm:-left-5 md:-left-5 lg:-left-2
           ">
-           Automate Labs
+           Automate Lab.
           </h2>
         </div>
       </div>

@@ -5,12 +5,11 @@ const NavContent = ({ isFixed, onMenuToggle, isMenuOpen }) => (
   // Aligned horizontal padding to match px-4 sm:px-6 lg:px-8
   <div className="uppercase max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full w-full">
     
+    
     {/* Logo block */}
     <div className="flex items-center space-x-3 cursor-pointer select-none">
-      <div className={`flex w-5 h-5 border-l border-r relative ${isFixed ? 'border-white/40' : 'border-black/30'}`}>
-        <div className={`absolute top-1/2 w-full border-t ${isFixed ? 'border-white/40' : 'border-black/30'}`}></div>
-      </div>
-      <span className="uppercase font-extrabold text-xl tracking-tighter ">Automate Labs</span>
+      <div><img className='h-8' src="/Logo.png" alt="Logo" /></div>
+      <span className="uppercase font-extrabold text-xl tracking-tighter ">Automate Lab .</span>
     </div>
 
     {/* Desktop Navigation */}
@@ -91,7 +90,7 @@ const Navbar = () => {
 
       {/* NAVBAR 2: Fixed Sticky Dynamic Panel */}
       <nav 
-        className={`fixed top-0 left-0 w-full h-20 bg-black text-white z-50 transition-transform duration-500 ease-out shadow-md font-instrument uppercase ${
+        className={`fixed top-0 left-0 w-full h-16 bg-black text-white z-50 transition-transform duration-500 ease-out shadow-md font-instrument uppercase ${
           isScrolled ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
