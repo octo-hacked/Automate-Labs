@@ -1,6 +1,6 @@
 import React from 'react'
 import RippleGrid from './ui/ripple_grid'
-import times_square_video from '/121994-724732238_medium.mp4'
+import times_square_video from '/23989-338901565.mp4'
 import graph from '/graph.mp4'
 import ui_development from '/UI_development.png'
 
