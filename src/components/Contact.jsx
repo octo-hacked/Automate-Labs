@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center font-instrument py-20 lg:py-0 lg:min-h-[80vh]">
+    <div id="contact" className="relative flex items-center justify-center font-instrument py-20 lg:py-0 lg:min-h-[80vh]">
 
       {/* Backgrounds */}
       <div className="w-full absolute inset-0 -z-10 bg-black/25" />
@@ -61,7 +61,7 @@ const Contact = () => {
             <GlassSurface width="100%" height="100%" borderRadius={20} />
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-5" aria-label="Contact form">
             <div>
               <label htmlFor="name" className="block text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">
                 Your Name
@@ -69,6 +69,8 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
+                name="name"
+                autoComplete="name"
                 required
                 className="w-full bg-neutral-900/50 border border-neutral-800 focus:border-neutral-600 text-white placeholder-neutral-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-neutral-600 transition-all"
                 placeholder="John Doe"
@@ -84,6 +86,8 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
+                autoComplete="email"
                 required
                 className="w-full bg-neutral-900/50 border border-neutral-800 focus:border-neutral-600 text-white placeholder-neutral-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-neutral-600 transition-all"
                 placeholder="john@example.com"
@@ -98,6 +102,7 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 required
                 rows={4}
                 className="w-full bg-neutral-900/50 border border-neutral-800 focus:border-neutral-600 text-white placeholder-neutral-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-neutral-600 resize-none transition-all"

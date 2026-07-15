@@ -1,15 +1,16 @@
 import React from 'react'
 import RippleGrid from './ui/ripple_grid'
-import times_square_video from '/23989-338901565.mp4'
-import graph from '/graph.mp4'
-import ui_development from '/UI_development.png'
+import times_square_video from '/iphone.svg'
+import graph from '/yellow man.svg'
+import ui_development from '/Blue Poster.svg'
+import pinkposter from '/pink poster.png'
 
 const HeroSection = () => {
   return (
-    <div className="mb-10 min-h-[calc(100vh-80px)] relative -z-20 bg-white font-instrument flex flex-col overflow-hidden">
+    <div id="home" className="mb-10 min-h-[calc(100vh-80px)] relative  font-instrument flex flex-col overflow-hidden">
 
       {/* Background Grid */}
-      <div className='absolute -z-10 w-full h-full -translate-y-48 translate-x-20 md:-translate-y-26 md:-translate-x-40 opacity-55'>
+      <div className='absolute -z-10 w-full h-full -translate-y-48 translate-x-20 md:-translate-y-96 md:translate-x-40 lg:-translate-y-38 lg:md:-translate-x-40 opacity-55 hidden md:block'>
         <RippleGrid
           enableRainbow={false}
           gridColor="#000000"
@@ -44,35 +45,46 @@ const HeroSection = () => {
             </div>
 
             {/* Right Image Grid */}
-            <div className="flex gap-1 h-[320px] sm:h-[450px] lg:h-[360px] w-full sm:w-[80%] lg:w-full mx-auto lg:ml-auto rounded-lg">
-              <div className="flex flex-col gap-1 w-[55%]">
+            <div className="flex gap-1 h-[320px] sm:h-[450px] lg:h-[360px] w-full sm:w-[80%] lg:w-full mx-auto lg:ml-auto rounded-lg ">
+              <div className="flex flex-col gap-1 w-[55%]  ">
+                <a className="w-full bg-[#041FB0] h-[65%] rounded-lg  cursor-pointer" aria-label="View UI/UX development work">
                 <img
                   src={ui_development}
-                  alt="Preview"
-                  className="w-full h-[65%] rounded-lg object-cover"
-                />
+                  alt="UI/UX and product development preview by Automate Lab"
+                  className='w-full h-full object-fit lg:-translate-x-4'
+                  style={{ cursor: 'pointer' }}
+                  loading="eager"
+                  >
+
+                  </img>
+                  </a>
+
                 <div className="flex gap-1 w-full h-[35%]">
                   <div className="w-1/2 h-full rounded-lg overflow-hidden relative">
-                    <video
+                    <img
                       className="absolute top-0 left-0 w-full h-full object-cover"
                       src={graph}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
+                      alt="Data analytics and automation dashboard illustration"
+                      loading="eager"
                     />
                   </div>
-                  <div className="bg-white rounded-lg w-1/2 h-full" />
+                  <div className="w-1/2 h-full rounded-lg overflow-hidden relative">
+                    <img
+                      className="absolute top-0 left-0 w-full h-full object-fit"
+                      src={pinkposter}
+                      alt="Automate Lab creative and marketing project preview"
+                      loading="eager"
+                    />
+                  </div>
+
                 </div>
               </div>
               <div className="w-[45%] h-full rounded-lg overflow-hidden relative">
-                <video
+                <img
                   className="absolute top-0 left-0 w-full h-full object-cover"
                   src={times_square_video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                  alt="Mobile app development preview by Automate Lab"
+                  loading="eager"
                 />
               </div>
             </div>

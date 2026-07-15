@@ -106,7 +106,7 @@ const testimonials = [
 export default function TestimonialSection() {
   return (
     // Replaced arbitrary my-20 with responsive py matched layout
-    <section className="my-16 sm:my-10 lg:my-16 text-gray-900 overflow-hidden font-instrument">
+    <section id="testimonials" className="my-16 sm:my-10 lg:my-16 text-gray-900 overflow-hidden font-instrument">
       {/* Aligned px-4 sm:px-6 lg:px-8 with the Hero structure */}
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
@@ -151,10 +151,12 @@ export default function TestimonialSection() {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-12 sm:mt-16 flex justify-center">
-          <button className="w-full sm:w-auto bg-black hover:bg-[#011a38] text-white font-semibold py-4 px-8 rounded-lg text-lg sm:text-xl transition-colors duration-200 shadow-sm">
+        <div className="mt-12 sm:mt-16 flex justify-center ">
+          <a href="#contact">
+          <button className="w-full sm:w-auto bg-black hover:bg-[#414141] text-white font-semibold py-4 px-8 rounded-lg text-lg sm:text-xl transition-colors duration-200 shadow-sm cursor-pointer">
             Book a Discovery Call
           </button>
+          </a>
         </div>
 
       </div>

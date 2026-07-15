@@ -23,7 +23,7 @@ const projects = [
     title: "ICCSAI",
     description: "An annual International Conference event. We designed their complete website from the ground up and seamlessly integrated their API.",
     tags: ["Web Development", "Event Platform", "API Integration"],
-    image: "ICCSAI AL.png",
+    image: "/ICCSAI AL.png",
     link: "https://www.iccsai.in/"
   }
 ]
@@ -31,14 +31,14 @@ const projects = [
 export default function ProjectsSection() {
   return (
     // Replaced broad 'my-20' with synchronized layout responsive section padding
-    <section className="my-20 sm:my-10 lg:my-20 text-gray-900 overflow-hidden font-instrument">
+    <section id="portfolio" className="my-20 sm:my-10 lg:my-20 text-gray-900 overflow-hidden font-instrument" aria-labelledby="portfolio-heading">
       {/* Aligned page container padding rules to match px-4 sm:px-6 lg:px-8 */}
       <div className="max-w-[1250px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        
+
         {/* Header Block: Preserved exactly as the Left Text architecture of Hero */}
         <div className="space-y-4 mb-9 sm:mb-8 lg:mb-12 leading-[1]">
           {/* Replaced fixed text scales with Hero's exact dynamic title parameters */}
-          <h2 className="text-[2.6rem] sm:text-5xl lg:text-6xl font-extrabold text-black tracking-tighter">
+          <h2 id="portfolio-heading" className="text-[2.6rem] sm:text-5xl lg:text-6xl font-extrabold text-black tracking-tighter">
             Featured 
             <span className="text-[#18387b]"> Projects</span>
           </h2>
@@ -52,35 +52,39 @@ export default function ProjectsSection() {
         {/* Adjusted to match the gaps of the hero image layout rules */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {projects.map((project) => (
-            <div 
-              key={project.id} 
+            <div
+              key={project.id}
+              itemScope
+              itemType="https://schema.org/CreativeWork"
               // Integrated border-gray-100 to sync cleanly with the layout borders across other panels
               className="bg-white border border-gray-300 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col overflow-hidden group"
             >
               {/* Project Image Panel */}
               <div className="relative h-56 sm:h-60 overflow-hidden bg-gray-50">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={`${project.title} — ${project.tags[0]} project by Automate Lab`}
+                  itemProp="image"
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                 />
               </div>
-              
+
               {/* Card Body Space */}
               <div className="p-5 sm:p-6 flex flex-col flex-grow">
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 tracking-tight">
+                <h3 itemProp="name" className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 tracking-tight">
                   {project.title}
                 </h3>
-                
-                <p className="text-gray-500 leading-relaxed mb-6 text-sm sm:text-[16px] flex-grow">
+
+                <p itemProp="description" className="text-gray-500 leading-relaxed mb-6 text-sm sm:text-[16px] flex-grow">
                   {project.description}
                 </p>
-                
+
                 {/* Meta Badges */}
                 <div className="flex flex-wrap gap-1.5 mb-6">
                   {project.tags.map((tag, index) => (
-                    <span 
-                      key={index} 
+                    <span
+                      key={index}
                       className="px-2.5 py-0.5 bg-[#FAFAFA] border border-gray-100 text-gray-400 text-xs sm:text-sm font-medium rounded-full"
                     >
                       {tag}
@@ -90,12 +94,15 @@ export default function ProjectsSection() {
 
                 {/* View Details Anchor */}
                 <div className="mt-auto pt-2">
-                  <a 
-                    href={project.link} 
+                  <a
+                    href={project.link}
+                    itemProp="url"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center font-bold text-sm sm:text-base text-[#18387b] hover:text-black transition-colors group/link"
                   >
                     View Project
-                    <svg 
+                    <svg
                       className="w-4 h-4 ml-1.5 transform transition-transform group-hover/link:translate-x-1" 
                       fill="none" 
                       viewBox="0 0 24 24" 

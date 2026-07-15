@@ -31,7 +31,7 @@ const StatsSection = () => {
           {statsData.map((stat, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center justify-center py-10 px-6 border text-center border-gray-300 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="flex flex-col items-center justify-center py-10 px-6 border text-center border-gray-300 rounded-lg bg-white shadow-lg hover:shadow-md transition-shadow duration-300"
             >
               <h3 className="text-[2.5rem] font-bold text-[#272535] mb-2 leading-none">
                 {stat.value}
