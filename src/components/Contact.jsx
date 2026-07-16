@@ -15,8 +15,8 @@ const Contact = () => {
     <div id="contact" className="relative flex items-center justify-center font-instrument py-20 lg:py-0 lg:min-h-[80vh]">
 
       {/* Backgrounds */}
-      <div className="w-full absolute inset-0 -z-10 bg-black/25" />
-      <div className="absolute inset-0 -z-20" style={{ willChange: 'transform', transform: 'translateZ(0)' }}>
+      <div className="w-full absolute inset-0 -z-10 bg-black md:bg-black/25" />
+      <div className="hidden md:block absolute inset-0 -z-20" style={{ willChange: 'transform', transform: 'translateZ(0)' }}>
         <DarkVeil
           hueShift={0}
           noiseIntensity={0}
@@ -44,13 +44,13 @@ const Contact = () => {
             <div>
               <p className="text-xs text-neutral-500 uppercase tracking-widest mb-1">Direct Line</p>
               <a href="mailto:hello@automatelabs.com" className="text-white hover:text-neutral-300 font-medium transition-colors text-sm sm:text-base">
-                hello@automatelabs.com
+                info@automatelab.in
               </a>
             </div>
-            <div>
+            {/* <div>
               <p className="text-xs text-neutral-500 uppercase tracking-widest mb-1">HQ Location</p>
               <p className="text-neutral-300 font-medium text-sm sm:text-base">San Francisco, CA</p>
-            </div>
+            </div> */}
           </div>
         </div>
 

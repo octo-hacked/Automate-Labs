@@ -1,9 +1,9 @@
 import React from 'react'
 import RippleGrid from './ui/ripple_grid'
-import times_square_video from '/iphone.svg'
-import graph from '/yellow man.svg'
-import ui_development from '/Blue Poster.svg'
-import pinkposter from '/pink poster.png'
+import times_square_video from '/iphone.webp'
+import graph from '/yellow man.webp'
+import ui_development from '/Blue Poster.png'
+import pinkposter from '/pink poster.webp'
 
 const HeroSection = () => {
   return (
@@ -47,11 +47,11 @@ const HeroSection = () => {
             {/* Right Image Grid */}
             <div className="flex gap-1 h-[320px] sm:h-[450px] lg:h-[360px] w-full sm:w-[80%] lg:w-full mx-auto lg:ml-auto rounded-lg ">
               <div className="flex flex-col gap-1 w-[55%]  ">
-                <a className="w-full bg-[#041FB0] h-[65%] rounded-lg  cursor-pointer" aria-label="View UI/UX development work">
+                <a className="w-full bg-[#041FB0] h-[65%] rounded-lg  cursor-pointer over overflow-clip" aria-label="View UI/UX development work " href='#contact'>
                 <img
                   src={ui_development}
                   alt="UI/UX and product development preview by Automate Lab"
-                  className='w-full h-full object-fit lg:-translate-x-4'
+                  className='w-full h-full object-fit '
                   style={{ cursor: 'pointer' }}
                   loading="eager"
                   >

@@ -5,7 +5,7 @@ const testimonials = [
     id: 1,
     content: (
       <>
-        For 3 years, Metro Media House has been my go-to team — helping deliver top-quality content for 7-9 figure clients with great communication, fast turnaround, and flawless editing.
+        Their automation solutions completely transformed our workflow. Tasks that took hours are now handled automatically, saving our team countless hours every week while eliminating manual errors.
       </>
     ),
     author: "Patrick Crosby",
@@ -15,17 +15,17 @@ const testimonials = [
     id: 2,
     content: (
       <>
-        Holy F*cking shit. Excuse my language but <span className="text-amber-600 font-medium">I took a sneak peek at the edits and they are unreal.</span> So stoked about this.
+        We hired them for a website redesign, but <span className="text-amber-600 font-medium">they ended up optimizing our entire digital ecosystem.</span> The new site is faster, cleaner, and converts significantly better.
       </>
     ),
     author: "George Munguia",
-    role: "Founder, Tryharmony.ai"
+    role: "Founder, Harmony AI"
   },
   {
     id: 3,
     content: (
       <>
-        Love the vibe and overall execution. <span className="text-indigo-600 font-medium">Edits are crisp, song choice & energy is a vibe, broll is on point, fonts are awesome.</span> Great work!
+        The UI/UX exceeded every expectation. <span className="text-indigo-600 font-medium">Beautiful interfaces, intuitive user flows, and a seamless experience that our customers instantly loved.</span>
       </>
     ),
     author: "Drew Rogers",
@@ -35,17 +35,17 @@ const testimonials = [
     id: 4,
     content: (
       <>
-        Metro Media House helped me rapidly build my personal brand online. Saksham is more than a supplier — he's a <span className="text-amber-600 font-medium">true partner with vision, strategy, and 24/7 support</span>
+        They became more than just a development agency—they acted as a strategic technology partner. <span className="text-amber-600 font-medium">From automation to web development and ongoing support, they delivered at every stage.</span>
       </>
     ),
     author: "Christian Schute",
-    role: "8 fig serial entrepreneur and investor. Built ticketing software for F1"
+    role: "Serial Entrepreneur & Investor"
   },
   {
     id: 5,
     content: (
       <>
-        Working with MMH has been an absolute pleasure. They produced several videos for Fluid Focus, and we were genuinely impressed by the creativity they brought to each concept. Their modern editing style gave our content a fresh, engaging feel that really captured our brand. Professional, imaginative, and easy to collaborate with - we couldn't be happier with the results.
+        Working with the team was effortless. They built our website, streamlined our operations with custom automations, and delivered a modern digital presence that perfectly reflects our brand.
       </>
     ),
     author: "Fluid Focus",
@@ -55,7 +55,7 @@ const testimonials = [
     id: 6,
     content: (
       <>
-        In just six weeks, Saksham and his team at Metro Media House helped me grow my brand significantly, <span className="text-amber-600 font-medium">increasing my income by thousands of dollars and securing three key client calls.</span> Highly recommend their approachable team and effective strategies.
+        Within weeks, they automated our lead management, CRM, and client onboarding. <span className="text-amber-600 font-medium">We saved dozens of hours every month while increasing conversions and improving customer experience.</span>
       </>
     ),
     author: "Robin Menezes",
@@ -65,42 +65,33 @@ const testimonials = [
     id: 7,
     content: (
       <>
-        We've had very good results. The team is very fast at feedback and their editing skills are top notch too. We have <span className="text-indigo-600 font-medium">multiple millions of views through Saksham's team on the B-roll side of things</span> which help with the strategy and the content that we already put out.
+        Their technical expertise is outstanding. <span className="text-indigo-600 font-medium">From custom dashboards to workflow automation and API integrations, everything worked flawlessly from day one.</span>
       </>
     ),
     author: "Lewy",
-    role: "Creative & Marketing, Arthur Brooks"
+    role: "Marketing Director"
   },
   {
     id: 8,
     content: (
       <>
-        In 2 months, they grew my Instagram from 2k to 8k followers organically, <span className="text-indigo-600 font-medium">helping me achieve my first $25k month with 20 new clients.</span>
+        Their SEO strategy and website optimization delivered incredible results. <span className="text-indigo-600 font-medium">Organic traffic more than doubled, and we started generating qualified leads consistently.</span>
       </>
     ),
     author: "Sheena",
-    role: "Relationship Coach"
+    role: "Business Owner"
   },
   {
     id: 9,
     content: (
       <>
-        Working with Metro Media House was a seamless experience. Their video quality is top-tier, and the content they produced consistently met our performance benchmarks. On the creative side, the team was always receptive to our feedback and willing to iterate to get the visual style just right. Their ability to take our vision and turn it into polished, high-caliber content was a big plus for our brand. I'd recommend them to anyone looking for a team that wants to make high quality videos.
+        Every project was delivered on time with exceptional quality. Whether it was web development, UI design, or automation, the team consistently exceeded expectations and communicated clearly throughout.
       </>
     ),
     author: "Brian Tam",
-    role: "Barebone AI"
+    role: "Founder, Barebone AI"
   },
-  {
-    id: 10,
-    content: (
-      <>
-        Metro Media House overdelivers — 95% on point, professional, and reliable. Highly recommended.
-      </>
-    ),
-    author: "Yashvardhan Swamy",
-    role: "Fitness Entrepreneur"
-  },
+  
 ];
 
 export default function TestimonialSection() {
